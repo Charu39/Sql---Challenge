@@ -15,6 +15,7 @@ CREATE TABLE "Employees" (
     "sex" VARCHAR(10)   NOT NULL,
     "hire_date" DATE   NOT NULL
 );
+ALTER DATABASE sql-challenge SET datestyle TO "ISO, MDY";
 
 CREATE TABLE "Department_Employees" (
     "emp_no" INT   NOT NULL,
@@ -37,11 +38,6 @@ CREATE TABLE "Titles" (
 );
 --Insert Data to tables
 
---Change columns to insert data as per CSV
-DROP TABLE IF EXISTS "Department_Manager";
-
---format birth and hire data to insert data correctly
-DROP TABLE IF EXISTS "Employees";
 
 SELECT * FROM "Department_Employees";
 SELECT * FROM "Department_Manager";
